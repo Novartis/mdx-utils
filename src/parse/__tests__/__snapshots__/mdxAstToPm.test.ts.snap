@@ -1,0 +1,248 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mdxAstToPm should parse most node types 1`] = `
+Object {
+  "attrs": Object {
+    "frontmatter": Object {
+      "title": "MDX nodes",
+    },
+  },
+  "content": Array [
+    Object {
+      "attrs": Object {
+        "value": "import CustomComponent from './CustomComponent';",
+      },
+      "type": "mdx_import",
+    },
+    Object {
+      "attrs": Object {
+        "level": 1,
+      },
+      "content": Array [
+        Object {
+          "text": "MDX nodes",
+          "type": "text",
+        },
+      ],
+      "type": "heading",
+    },
+    Object {
+      "content": Array [
+        Object {
+          "text": "Here is an example of many different MDX elements. You can have ",
+          "type": "text",
+        },
+        Object {
+          "marks": Array [
+            Object {
+              "type": "strong",
+            },
+          ],
+          "text": "bold",
+          "type": "text",
+        },
+        Object {
+          "text": " text, ",
+          "type": "text",
+        },
+        Object {
+          "marks": Array [
+            Object {
+              "type": "em",
+            },
+          ],
+          "text": "italic",
+          "type": "text",
+        },
+        Object {
+          "text": " text, ",
+          "type": "text",
+        },
+        Object {
+          "marks": Array [
+            Object {
+              "type": "code",
+            },
+          ],
+          "text": "code",
+          "type": "text",
+        },
+        Object {
+          "text": ", and ",
+          "type": "text",
+        },
+        Object {
+          "marks": Array [
+            Object {
+              "attrs": Object {
+                "href": "https://novartis.com",
+                "title": null,
+              },
+              "type": "link",
+            },
+          ],
+          "text": "links",
+          "type": "text",
+        },
+        Object {
+          "text": ".",
+          "type": "text",
+        },
+      ],
+      "type": "paragraph",
+    },
+    Object {
+      "content": Array [
+        Object {
+          "text": "Here's a list:",
+          "type": "text",
+        },
+      ],
+      "type": "paragraph",
+    },
+    Object {
+      "attrs": Object {
+        "tight": true,
+      },
+      "content": Array [
+        Object {
+          "content": Array [
+            Object {
+              "content": Array [
+                Object {
+                  "text": "First item",
+                  "type": "text",
+                },
+              ],
+              "type": "paragraph",
+            },
+          ],
+          "type": "list_item",
+        },
+        Object {
+          "content": Array [
+            Object {
+              "content": Array [
+                Object {
+                  "text": "Second item",
+                  "type": "text",
+                },
+              ],
+              "type": "paragraph",
+            },
+          ],
+          "type": "list_item",
+        },
+        Object {
+          "content": Array [
+            Object {
+              "content": Array [
+                Object {
+                  "text": "Third item",
+                  "type": "text",
+                },
+              ],
+              "type": "paragraph",
+            },
+            Object {
+              "attrs": Object {
+                "order": 1,
+                "tight": true,
+              },
+              "content": Array [
+                Object {
+                  "content": Array [
+                    Object {
+                      "content": Array [
+                        Object {
+                          "text": "This one has a nested ordered list",
+                          "type": "text",
+                        },
+                      ],
+                      "type": "paragraph",
+                    },
+                  ],
+                  "type": "list_item",
+                },
+                Object {
+                  "content": Array [
+                    Object {
+                      "content": Array [
+                        Object {
+                          "text": "Should parse correctly",
+                          "type": "text",
+                        },
+                      ],
+                      "type": "paragraph",
+                    },
+                  ],
+                  "type": "list_item",
+                },
+              ],
+              "type": "ordered_list",
+            },
+          ],
+          "type": "list_item",
+        },
+      ],
+      "type": "bullet_list",
+    },
+    Object {
+      "content": Array [
+        Object {
+          "content": Array [
+            Object {
+              "text": "Sometimes you like to use blockquotes as well",
+              "type": "text",
+            },
+          ],
+          "type": "paragraph",
+        },
+      ],
+      "type": "blockquote",
+    },
+    Object {
+      "type": "horizontal_rule",
+    },
+    Object {
+      "attrs": Object {
+        "level": 2,
+      },
+      "content": Array [
+        Object {
+          "text": "More examples",
+          "type": "text",
+        },
+      ],
+      "type": "heading",
+    },
+    Object {
+      "attrs": Object {
+        "value": "<CustomComponent prop=\\"value\\" />",
+      },
+      "type": "mdx_jsx",
+    },
+    Object {
+      "attrs": Object {
+        "value": "export function hello() {
+  return 'world';
+}",
+      },
+      "type": "mdx_export",
+    },
+    Object {
+      "attrs": Object {
+        "params": "",
+      },
+      "content": Array [
+        Object {
+          "text": "// Code sample",
+          "type": "text",
+        },
+      ],
+      "type": "code_block",
+    },
+  ],
+  "type": "doc",
+}
+`;

@@ -1,0 +1,3 @@
+extends:
+  - alloy
+  - alloy/typescript

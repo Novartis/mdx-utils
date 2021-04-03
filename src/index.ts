@@ -1,2 +1,1 @@
-import frontmatterToMeta from './frontmatterToMeta';
-export { frontmatterToMeta };
+export { default as frontmatterToMeta } from './frontmatterToMeta';
